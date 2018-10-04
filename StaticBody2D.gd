@@ -1,7 +1,7 @@
 extends StaticBody2D
 
 
-func _ready() -> void:
+func _ready():
 	# Get triangles points from mesh
 	var points = $MeshInstance.mesh.get_faces()
 	
@@ -22,6 +22,7 @@ func _ready() -> void:
 		idx += 3
 		
 	for sh in shapes:
-		# Add created shapes to collision body
+		# Add created shapes to this collision body
+		# `0` indicates the first shape owner which is `CollisionShape2D`
 		shape_owner_add_shape(0, sh)
 	
