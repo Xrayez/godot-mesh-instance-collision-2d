@@ -1,4 +1,4 @@
-# Create collision shapes from sprites in Godot 3.0
+# Create collision shapes from sprites in Godot 3.1
 
 ## Instructions on how to create MeshInstance from Sprite
 
